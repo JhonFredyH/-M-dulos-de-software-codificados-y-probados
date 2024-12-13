@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+
+:root {
+    --sky-blue: #4C9AFF;
+    --aqua-blue: #00B0FF;
+    --terra-blue: #2d2382;
+    --emerald-green: #28A745;
+    --lime-green: #7CFC00;
+    --burnt-orange: #FF6F00;
+    --sunset-orange: #FFA726;
+    --golden-yellow: #FFD700;
+    --sunshine-yellow: #FFEB3B;
+    --white: #ffff;
+    --pearl-white: #F2F2F2;
+    --light-grey: #E0E0E0;
+    --charcoal-black: #333333;
+    --navy-blue: rgb(12, 33, 97);
+    --midnight-blue: #000239;
+    --black-midnight: #0000;
+    --hover: #3f33a1;
+    --dark:#11101c;  
+
+    --font-size-icon: 2.5rem;
+    --font-size-icon-small: 1.8rem;
+    --font-size-link: 2.0rem;
+    --font-size-link-submenu: 1.20rem;   
+    --font-size-medium: 18px;
+    --font-size-large: 20px;
+    --font-size-XL: 28px;
+    --font-size-title-mini : 14px;
+    --font-size-title-small: 20px;
+    --font-size-title-medium: 32px;
+    --font-size-title-large: 40px;
+}
+
+
+
+body {
+    background-image: url('../img/pexels-pixabay-159644.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Coming Soon", cursive;
+    text-decoration: none;    
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 60px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
+    
+    .message {
+            color: green;
+            font-weight: bold;
+            font-size: var( --font-size-title-small);
+            margin-top: 20px;
+            text-align: center;
+            
+            
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+    .title {
+        text-align: center;
+        letter-spacing: 3.6px;
+        margin-top: -50px
+    }
+
+    .form {
+        width: 80%;
+
+        .input_group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: 20px;
+
+            label {
+                font-size: 20px;
+                font-weight: 800;
+                letter-spacing: 1.5px;
+                color: var(--charcoal-black);
+                text-align: left;
+                margin-left: 18px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="email"]
+            {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 25px;
+                font-family: "Roboto", serif;
+                font-size: var(--font-size-title-small);               
+                width: 100%;
+                box-sizing: border-box;
+                outline: none;
+                padding: 10px 10px 10px 45px;
+
+                &:focus {
+                    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+                }
+            }      
+         }            
+         
+    
+
+   
+        input[type="submit"] {
+            padding: 10px;
+            border: none;
+            background-color: var(--golden-yellow);
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 800;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 60px;
+            color: var(--black);
+            font-size: var(--font-size-medium);
+            transition: all 0.3s ease;
+            font-family: "Coming Soon", cursive;
+
+            &:hover {
+                background-color: var(--hover);
+                color: var(--white);
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+   
+}
+
